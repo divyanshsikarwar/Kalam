@@ -20,7 +20,7 @@ function userurl() {
     var inputurl = document.getElementById("basic-url")
     var ava = document.getElementById("availability")
     var xy = inputurl.value;
-    url.value="www.FilesOP.com/file/" + xy.split(' ').join('')
+    url.value="https://kalam-editor.herokuapp.com/file/" + xy.split(' ').join('')
     var avabtn = document.getElementById("button-validate")
 
     avabtn.style.backgroundColor="#FFCB39"
@@ -63,7 +63,7 @@ async function btnvalidate() {
     var url = document.getElementById("myinput")
     var inputurl = document.getElementById("basic-url")
     var id = crypto.randomBytes(20).toString('hex');
-    url.value= "www.FilesOP.com/file/" + id
+    url.value= "https://kalam-editor.herokuapp.com/file/" + id
     inputurl.value = id
 }
 
@@ -196,7 +196,7 @@ function Createfile(){
     
     <InputGroup.Prepend>
       <InputGroup.Text id="basic-addon3">
-        www.FilesOP.com/file/
+        file/
       </InputGroup.Text>
     </InputGroup.Prepend>
     
@@ -219,7 +219,7 @@ function Createfile(){
   <Form.Label className="headings">Your Document ID :</Form.Label>
   <InputGroup className="mb-3" >
     <FormControl 
-      value="www.FilesOP.com/file/" id="myinput" />
+      value="https://kalam-editor.herokuapp.com/file/" id="myinput" />
       <InputGroup.Append>
   <Button variant="primary" className="butt"  onClick={copy}>Copy</Button>
     </InputGroup.Append>
