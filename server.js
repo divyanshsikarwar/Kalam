@@ -1,7 +1,6 @@
 const express = require('express')
 require('events').EventEmitter.prototype._maxListeners = 0;
 const PORT = process.env.PORT || 5000;
-const KEY = process.env.KEY;
 
 const cors = require('cors');
 const app = express()
