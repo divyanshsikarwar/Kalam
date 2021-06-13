@@ -16,7 +16,7 @@ import { Editor } from 'react-draft-wysiwyg';
 import htmlToDraft from 'html-to-draftjs';
 const PORT = process.env.PORT || 5000;
 // cennection to socket
-const socket = io.connect("http://localhost:"+PORT)
+const socket = io.connect("/")
 
 
 var id=""
@@ -55,7 +55,7 @@ function viewcopy(){
 
 setInterval(async ()=>{ 
   if(userstate===true){
-  await axios.post("http://localhost:"+PORT+"/update",{"DocID":id, "content":currContent })}
+  await axios.post("/update",{"DocID":id, "content":currContent })}
 }, 60000);
 
 
@@ -154,7 +154,7 @@ function App() {
 
   useEffect(()=>{
     const getData = async () => {
-      const resp = await axios.post('http://localhost:'+ PORT+ '/passcheck',{ID: id});
+      const resp = await axios.post('/passcheck',{ID: id});
       viewpasss = await resp.data.V_P
       try{
         var xx = sessionStorage.ID.split(";")
@@ -164,7 +164,7 @@ function App() {
         userstate = true
         updateaccess(true)
         userUpdate("Admin")
-        var bic = await axios.post('http://localhost:' + PORT+ '/newfile',{id: id});
+        var bic = await axios.post('/newfile',{id: id});
         var basic=bic.data
         updateuseronline(basic.others)
 
@@ -184,7 +184,7 @@ function App() {
           userstate = false
           updateaccess(true)
           userUpdate("Viewer")
-          var bic = await axios.post('http://localhost:' + PORT + '/newfile',{id: id});
+          var bic = await axios.post('/newfile',{id: id});
           var basic=bic.data
           updateuseronline(basic.others)
         if (basic.others===1)
@@ -239,14 +239,14 @@ socket.on("want-content", () =>{
 // what happens when content changes
 
   async function update() {
-     await axios.post("http://localhost:" + PORT +"/update",{"DocID":id, "content":currContent})
+     await axios.post("/update",{"DocID":id, "content":currContent})
   }
 
   useEffect(() => {
     const handleTabClosing = () => {
       if(access==true) {
 
-        axios.post('http://localhost:' + PORT + '/exitfile',{"id" : id})
+        axios.post('/exitfile',{"id" : id})
         }
     }
     

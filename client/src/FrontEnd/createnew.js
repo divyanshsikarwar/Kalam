@@ -41,7 +41,7 @@ async function btnvalidate() {
       ava.innerText="Document ID Cannot be Empty"
       return
     }
-    const response = await axios.post("/" + PORT + "/check",{ID: x});
+    const response = await axios.post("/check",{ID: x});
     
       IDavailable = await response.data.ans;
 
