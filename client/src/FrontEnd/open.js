@@ -43,10 +43,10 @@ async function btnopenvalidate() {
     document.getElementById("empty").style.display="block"
   }
   else{
-    const response = await axios.post("http://localhost:" + PORT + "/check",{ID: DocID});
+    const response = await axios.post("/check",{ID: DocID});
     IDavailable = await response.data.ans;
     if(IDavailable=== false){
-    const res = await axios.post("http://localhost:" + PORT + "/passcheck",{ID: DocID});
+    const res = await axios.post("/passcheck",{ID: DocID});
     local_pass = await res.data.Password
     localview_pass = await res.data.Viewer_Password
     }

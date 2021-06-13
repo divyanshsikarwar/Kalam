@@ -41,7 +41,7 @@ async function btnvalidate() {
       ava.innerText="Document ID Cannot be Empty"
       return
     }
-    const response = await axios.post("http://localhost:" + PORT + "/check",{ID: x});
+    const response = await axios.post("/" + PORT + "/check",{ID: x});
     
       IDavailable = await response.data.ans;
 
@@ -145,7 +145,7 @@ async function finalcreate() {
         DocID =  document.getElementById("basic-url").value
         //d---------------
         var vp = Math.random().toString(36).slice(2)
-        axios.post("http://localhost:" + PORT + "/insert",{
+        axios.post("/insert",{
           "DocID" : DocID,
           "Password" : crypto.createHash('sha1').update(Password).digest('hex'),
           "Viewer_Password": crypto.createHash('sha1').update(vp).digest('hex'),
