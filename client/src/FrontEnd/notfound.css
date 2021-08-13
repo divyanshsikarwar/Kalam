@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+
+#notfbtn{
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  padding: .5em;
+  border-radius: 3px;
+  float: left;
+  margin: 6em 0 0 -155px;
+  left: 50%;
+  position: relative;
+  transition: all .3s linear;
+}
+
+#notfp {
+  color: azure;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+}
+
+#notfh1 {
+  color: azure;
+  text-align: center;
+  font-size: 15em;
+  font-weight: 100;
+}

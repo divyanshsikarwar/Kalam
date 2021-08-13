@@ -1,0 +1,373 @@
+@keyframes promptt {
+  from {color: red;}
+  to {color: rgba(1,122,254,255);}
+}
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFCB39; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b69029; 
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-size: 100% auto;
+
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 30px 0 50px 0;
+}
+
+.section.bg {
+
+}
+/*
+  Header
+*/
+
+.hold {
+  height: 80px;
+}
+
+.header {
+  line-height: 80px;
+  width: 100%;
+  transition: line-height 0.2s linear, box-shadow 0.2s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+}
+
+.header.small {
+  line-height: 50px;
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.8);
+}
+
+.header.small > .container > #logo {
+  height: 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: red;
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5px;
+  text-align: center;
+
+}
+
+#name {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+ul.nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav li {
+  float: left;
+  position: relative;
+}
+
+ul.nav li a {
+  transition: color 0.2s linear;
+  font-size: 18px;
+}
+
+ul.nav li:hover a {
+  color: red;
+}
+
+ul.nav li a {
+  padding: 21px;
+  color: initial;
+  text-decoration: initial;
+}
+
+/*-------------------------- Header  END  --------------------*/
+
+/* --------------------------Popup Start ---------------------*/
+
+#createfile{
+  position: absolute;
+  margin-left: 35%;
+  width: 30%;
+  padding: 10px;
+
+}
+
+
+#openfile{
+
+  position: absolute;
+  margin-left: 35%;
+  width: 30%;
+
+  padding: 10px;
+
+
+}
+#button-validate{
+  margin-right: 10px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  background-color: grey;
+  border-color: rgba(0,0,0,0.5) !important;
+}
+
+#button-createfile{
+  margin-top: 2px;
+  margin-bottom: 15px;
+
+}
+
+
+/* rgb(34, 180, 34) green
+rgb(241, 18, 18) red  */
+
+.text-muted{
+  color: #f7f7f79c !important;
+}
+.butt{
+  
+  background-color: #FFCB39;
+  border-color: rgba(0,0,0,0.5) !important;
+}
+.butt:hover{
+  background-color: #d3a72f ;
+}
+
+#availability{
+  display: none;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  color: rgb(241, 18, 18) !important; 
+}
+
+.open-heading{
+  font-family: 'Dosis', sans-serif;
+  margin-top: 20px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#pass-promt1{
+  color: red;
+  display: none;
+}
+#pass-prompt2{
+  color: rgb(34, 180, 34);
+  display: none;
+}
+
+.prompt{
+  display: none;
+  color: red;
+}
+
+
+#orbtn{
+  margin-top: -25px;
+  border-color: #FFCB39;
+  color: #FFCB39;
+  width: 100%;
+}
+
+#orbtn:hover{
+  color: #f7f7f7;
+  background-color: #FFCB39;
+}
+
+.formtexxt{
+  margin-top: -17px;
+  margin-bottom: 12px;
+}
+
+#empty{
+  color: red !important;
+  display: none;
+}
+.headings{
+  color: #f7f7f7;
+}
+
+/*-------------- Toolbaar ----------(59,18,80)--*/
+.ql-toolbar.ql-snow{
+
+  margin-top: 6px;
+  background-color: #FFCB39;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 200px ;
+  margin-right: 200px ;
+  justify-content: center;
+  padding: 7px;
+  border : none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.quill{
+
+}
+
+.ql-container{
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  border-color: black !important;
+  height: 650px;
+  background-color: rgb(29, 9, 39);
+  color: #f7f7f7;
+  box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.2), 0 32px 32px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: hidden;
+}
+
+
+
+#openbgt{
+  position: absolute;
+  left: 34%;
+  height: 550px;
+  width: 490px;
+  background: #f1f1f11a;
+  border-radius: 15px;
+
+}
+
+#createbgt{
+  position: absolute;
+  left: 34%;
+  height: 710px;
+  width: 490px;
+  background: #f1f1f11a;
+  border-radius: 15px;
+}
+
+#online{
+  color:#f1f1f1 ;
+  margin-top: -10px;
+  justify-self: center;
+  margin-left: 46%;
+  background-color:rgb(29, 9, 39);
+  width: 150px;
+  height: 26px;
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+
+.dot{
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(52,194,1,255);
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 5s infinite;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+  #dropdown-basic-button {
+      display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #---{
+    margin-top: 0px;
+  }
+  #aboutus{
+    opacity: 0;
+  }
+
+  #openfile, #createfile{
+    margin-left: 0;
+    width: 100%;
+  }
+  .ql-toolbar.ql-snow{
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .ql-container{
+  
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+
+  #openbgt{
+    height: 10px;
+    width: 10px;
+    left: 0;
+    visibility: hidden;
+  }
+  #createbgt{
+    height: 10px;
+    width: 10px;
+    left:0;
+    visibility: hidden;
+  }
+  .DraftEditor-editorContainer{
+    overflow-x: hidden;
+  }
+  #online{
+    margin-top: 30px;
+    margin-left: 33%;
+  }
+}

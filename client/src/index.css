@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#docid{
+
+  margin-left: 25px !important;
+  color: azure; 
+  font-size: 15px;
+  font-weight: 600;
+}
+#docidbg{
+  background-color: black;
+  border-radius: 2.5px;
+  color: white; 
+  padding-left: 4px;
+  padding-right: 4px;
+}
+#viewid{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  margin-top: -22px;
+  margin-right: 25px !important;
+  color: azure;
+}
+#savebtn{
+  position: absolute;
+
+  margin-top: 9px;
+  margin-right: 65px;
+  right: 35px;
+
+
+}
+#savebtn:hover{
+  width: 28px;
+  height: 28px;
+}
+
+#downbtn{
+  position: absolute;
+  margin-top: 9px;
+  margin-right: 20px;
+  right: 35px;
+}
+#downbtn:hover{
+  width: 28px;
+  height: 28px;
+}
+
+#viewonly{
+  margin-top: 8px;
+  background-color: #FFCB39;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 900px) {
+  #viewid{
+
+    text-align: left;
+    margin-top: 0;
+  }
+  #LOGO{
+    display: none;
+  }
+  #docid{
+    color: black;
+  }
+  #viewid{
+    color: black;
+    margin-left: 20px;
+  }
+  #savebtn{
+    bottom: -110px;
+    margin-right: 65px;
+    right: 35px;
+  }
+  #downbtn{
+    bottom: -110px;
+    margin-right: 20px;
+    right: 35px;
+  }
+  .rdw-inline-wrapper {
+    margin-left: 0px;
+  }
+}
+
+.mystyle{
+  background: null;
+}
+
+#LOGO{
+  width: 10%;
+  height: auto;
+}
