@@ -269,7 +269,7 @@ socket.on("want-content", () =>{
     <div id="app-bg" >
     <img id="savebtn" src={save} alt="Logo" onClick={update} height="24px" width="24px" />
     <img id="downbtn" src={down} alt="Logo" onClick={exportHTML} height="24px" width="24px" />
-    <ControlledEditor />
+    <ControlledEditor autoFocus />
     <span id="docid" >Document ID : <span id="docidbg">{id}</span> </span> <img src={logo} alt="Logo" onClick={copy} />
 
     <div id="viewid"><span >Copy View Only Credentials : <img src={logo} alt="Logo" onClick={viewcopy} /></span></div>
