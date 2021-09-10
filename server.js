@@ -40,7 +40,7 @@ const socketuser = {}
 
 
 const mongoose = require('mongoose');
-mongoose.connect(PROCESS.ENV.MONGODBKEY);
+mongoose.connect(process.env.MONGODBKEY);
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
 db.once('open', function(callback){
